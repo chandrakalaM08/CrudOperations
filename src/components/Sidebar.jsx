@@ -5,8 +5,12 @@ import {useSearchParams} from "react-router-dom"
 const Sidebar = () => {
 
   const [searchParams, setSearchParams] = useSearchParams()
-  const [category, setCategory] = useState([])
-  const [gender, setGender] = useState([])
+
+  const initialCategory = searchParams.getAll("category")
+  const initialGender = searchParams.getAll("gender")
+
+  const [category, setCategory] = useState(initialCategory || [])
+  const [gender, setGender] = useState(initialGender || [])
 
 
   useEffect(() => {
@@ -60,30 +64,42 @@ const Sidebar = () => {
     <DIV>
       <h3>Filter by Category</h3>
       <div>
-        <input type='checkbox' value={"top-wear"} onChange={handleCategory}/>
+        <input type='checkbox' value={"top-wear"}
+          onChange={handleCategory}
+        checked={category.includes("top-wear")}/>
         <label>Top Wear</label>
       </div>
        <div>
-        <input type='checkbox' value={"bottom-wear"} onChange={handleCategory}/>
+        <input type='checkbox' value={"bottom-wear"}
+          onChange={handleCategory}
+        checked={category.includes("bottom-wear")}/>
         <label>Bottom Wear</label>
       </div>
        <div>
-        <input type='checkbox' value={"foot-wear"} onChange={handleCategory}/>
+        <input type='checkbox' value={"foot-wear"}
+          onChange={handleCategory}
+        checked={category.includes("foot-wear")}/>
         <label>Footwear</label>
       </div>
 
       <br />
       <h3>Filter by Gender</h3>
       <div>
-        <input type='checkbox' value={"male"} onChange={handleGender}/>
+        <input type='checkbox' value={"male"}
+          onChange={handleGender}
+        checked={gender.includes("male")}/>
         <label>Men</label>
       </div>
        <div>
-        <input type='checkbox' value={"female"} onChange={handleGender}/>
+        <input type='checkbox' value={"female"}
+          onChange={handleGender}
+        checked={gender.includes("female")}/>
         <label>Women</label>
       </div>
        <div>
-        <input type='checkbox' value={"kids"} onChange={handleGender}/>
+        <input type='checkbox' value={"kids"}
+          onChange={handleGender}
+        checked={gender.includes("kids")}/>
         <label>Kids</label>
       </div>
     </DIV>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 const ProductCard = ({ id, title, brand, price, image, category, gender }) => {
   
@@ -10,6 +11,8 @@ const ProductCard = ({ id, title, brand, price, image, category, gender }) => {
       <p>Category : {category}</p>
       <p>Brand : {brand}</p>
       <p>Gender : {gender}</p>
+
+      <button><Link to={`edit/${id}`}>Edit</Link></button>
     </DIV>
   )
 }
