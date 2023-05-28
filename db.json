@@ -1,45 +1,18 @@
 {
   "products": [
     {
-      "title": "T-shirt",
-      "brand": "Roadster",
-      "price": 520,
-      "image": "https://placehold.co/400",
-      "category": "top-wear",
-      "gender": "female",
-      "id": 1
-    },
-    {
-      "title": "rrr",
-      "brand": "Roadster",
-      "price": 688,
-      "image": "https://placehold.co/400",
-      "category": "top-wear",
-      "gender": "male",
-      "id": 2
-    },
-    {
       "title": "Shoes",
       "brand": "Roadster",
-      "price": 789,
+      "price": 800,
       "image": "https://placehold.co/400",
-      "category": "foot-wear",
+      "category": "bottom-wear",
       "gender": "kids",
       "id": 3
     },
-     {
-      "title": "rrr",
-      "brand": "Roadster",
-      "price": 688,
-      "image": "https://placehold.co/400",
-      "category": "top-wear",
-      "gender": "kids",
-      "id": 4
-    },
     {
       "title": "Shoes",
       "brand": "Roadster",
-      "price": 789,
+      "price": 1700,
       "image": "https://placehold.co/400",
       "category": "foot-wear",
       "gender": "male",
@@ -48,7 +21,7 @@
     {
       "title": "Shoes",
       "brand": "Roadster",
-      "price": 789,
+      "price": 3000,
       "image": "https://placehold.co/400",
       "category": "foot-wear",
       "gender": "female",
@@ -57,7 +30,7 @@
     {
       "title": "Shoes",
       "brand": "Roadster",
-      "price": 789,
+      "price": 2100,
       "image": "https://placehold.co/400",
       "category": "bottom-wear",
       "gender": "male",
@@ -66,7 +39,7 @@
     {
       "title": "Shoes",
       "brand": "Roadster",
-      "price": 789,
+      "price": 1400,
       "image": "https://placehold.co/400",
       "category": "bottom-wear",
       "gender": "female",
@@ -75,17 +48,16 @@
     {
       "title": "Shoes",
       "brand": "Roadster",
-      "price": 789,
+      "price": 1300,
       "image": "https://placehold.co/400",
       "category": "bottom-wear",
       "gender": "kids",
       "id": 9
-    }
-    ,
+    },
     {
       "title": "Shoes",
       "brand": "Roadster",
-      "price": 789,
+      "price": 1550,
       "image": "https://placehold.co/400",
       "category": "foot-wear",
       "gender": "female",
@@ -94,7 +66,7 @@
     {
       "title": "Shoes",
       "brand": "Roadster",
-      "price": 789,
+      "price": 750,
       "image": "https://placehold.co/400",
       "category": "bottom-wear",
       "gender": "male",
@@ -103,20 +75,11 @@
     {
       "title": "Shoes",
       "brand": "Roadster",
-      "price": 789,
+      "price": 900,
       "image": "https://placehold.co/400",
       "category": "bottom-wear",
       "gender": "female",
       "id": 12
-    },
-    {
-      "title": "Shoes",
-      "brand": "Roadster",
-      "price": 789,
-      "image": "https://placehold.co/400",
-      "category": "bottom-wear",
-      "gender": "kids",
-      "id": 13
     }
   ]
 }

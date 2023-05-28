@@ -12,8 +12,9 @@ const ProductList = () => {
   let paramObj = {
     params: {
       category: searchParams.getAll("category"),
-      gender : searchParams.getAll("gender")
-      
+      gender: searchParams.getAll("gender"),
+      _order: searchParams.get("order"),
+      _sort: searchParams.get("order") && "price"
    }
  }
 

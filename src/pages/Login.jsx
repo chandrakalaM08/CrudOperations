@@ -1,19 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from 'styled-components';
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../redux/Authentication/action";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const Login = ()=>{
 
   const [email,setEmail] = useState("")
   const [password, setPassword] = useState("")
 
+  const location = useLocation()
+
+
   const dispatch = useDispatch()
 
   const auth = useSelector(store => store.AuthReducer.isAuth)
-  const error = useSelector(store=> store.AuthReducer.isError)
+  const error = useSelector(store => store.AuthReducer.isError)
 
-  
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (auth) {
+      navigate(location.state, { replace: true })
+    }
+  }, [auth])
 
   const handleLogin = (e) => {
     e.preventDefault()
